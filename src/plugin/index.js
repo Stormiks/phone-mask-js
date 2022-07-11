@@ -13,7 +13,7 @@ class InputTelephon {
         this.isInitInstance = Object.prototype.hasOwnProperty.call(options, 'init') ? options.init : true
         this._eventsInput = Object.prototype.hasOwnProperty.call(options, 'events') ? options.events : this._eventsInput
         this._inputs = Object.prototype.hasOwnProperty.call(options, 'fields') ? options.fields : this._inputs
-        this._searchInputPattern = Object.prototype.hasOwnProperty.call(options, 'patternNodeInpit') ? options.patternNodeInpit : this._searchInputPattern
+        this._searchInputPattern = Object.prototype.hasOwnProperty.call(options, 'patternNodeInput') ? options.patternNodeInput : this._searchInputPattern
 
         if (this.isInitInstance)
             this.install()
@@ -141,7 +141,7 @@ class InputTelephon {
         const formatFirstSymbolOfStr = nameEvent.slice(0,1).toUpperCase()
         const restOfTheLine = nameEvent.slice(1)
         const nameMethodAtClass = `handler${formatFirstSymbolOfStr}${restOfTheLine}`
-        
+
         if (!this[nameMethodAtClass]) {
             return false
         } else {

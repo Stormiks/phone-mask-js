@@ -1,7 +1,5 @@
 # Модуль для установки маски ввода на поле, для ввода телефона
 
-[![pipeline status](https://gitlab.com/skylinker/phone-mask-js/badges/public/pipeline.svg)](https://gitlab.com/skylinker/phone-mask-js/-/commits/public)
-
 ## Пример
 
 ```html
